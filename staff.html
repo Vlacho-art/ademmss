@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff | Ademass</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+<style>
+    /*==========================
+STAFF
+==========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f6fb;
+}
+
+.staff{
+
+    width:100%;
+    padding:80px 8%;
+    background:#f4f6fb;
+
+}
+
+.titulo{
+
+    text-align:center;
+    font-size:55px;
+    color:#2ca7d3;
+    margin-bottom:15px;
+    font-weight:700;
+
+}
+
+.staff-subtitulo{
+
+    text-align:center;
+    color:#777;
+    font-size:18px;
+    margin-bottom:60px;
+
+}
+
+/*==========================
+GRID
+==========================*/
+
+.staff-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:35px;
+
+}
+
+/*==========================
+CARD
+==========================*/
+
+.staff-card{
+
+    background:#fff;
+    border-radius:20px;
+    padding:35px 25px;
+    position:relative;
+    overflow:hidden;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.staff-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+/*==========================
+DECORACIONES
+==========================*/
+
+.decoracion{
+
+    position:absolute;
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    top:-70px;
+    right:-70px;
+    opacity:.15;
+
+}
+
+.decoracion1{
+    background:#ff66a3;
+}
+
+.decoracion2{
+    background:#00bcd4;
+}
+
+.decoracion3{
+    background:#9c27b0;
+}
+
+.decoracion4{
+    background:#4caf50;
+}
+
+.decoracion5{
+    background:#ff9800;
+}
+
+/*==========================
+IMAGEN
+==========================*/
+
+.staff-card img{
+
+    width:170px;
+    height:170px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    border:6px solid #f3f3f3;
+
+    margin-bottom:25px;
+
+    transition:.4s;
+
+    animation:flotar 3s ease-in-out infinite;
+
+}
+
+.staff-card:hover img{
+
+    transform:scale(1.08) rotate(5deg);
+
+}
+
+/*==========================
+TEXTOS
+==========================*/
+
+.staff-card h3{
+
+    color:#243b53;
+    font-size:28px;
+    margin-bottom:10px;
+
+}
+
+.staff-card span{
+
+    display:block;
+    color:#29a9d1;
+    font-weight:600;
+    margin-bottom:18px;
+
+}
+
+.staff-card p{
+
+    color:#666;
+    line-height:1.8;
+    font-size:16px;
+
+}
+
+/*==========================
+REDES
+==========================*/
+
+.social{
+
+    margin-top:25px;
+
+}
+
+.social i{
+
+    width:45px;
+    height:45px;
+
+    background:#f4f4f4;
+
+    border-radius:50%;
+
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+
+    margin:0 6px;
+
+    color:#2ca7d3;
+
+    font-size:18px;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.social i:hover{
+
+    background:#2ca7d3;
+    color:#fff;
+    transform:translateY(-5px);
+
+}
+
+/*==========================
+ANIMACIÓN
+==========================*/
+
+@keyframes flotar{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==========================
+RESPONSIVE
+==========================*/
+
+@media(max-width:992px){
+
+.staff-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:650px){
+
+.staff-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.titulo{
+
+    font-size:42px;
+
+}
+
+.staff-card{
+
+    padding:30px 20px;
+
+}
+
+.staff-card img{
+
+    width:150px;
+    height:150px;
+
+}
+
+}
+</style>
+</head>
+<header class="header">
+
+    <div class="logo">
+        <img src="img/logo.png" alt="Ademass">
+    </div>
+
+    <nav class="menu">
+        <a href="#" class="active">Inicio</a>
+        <a href="pilares.html">Pilares</a>
+        <a href="discord.html">Discord</a>
+        <a href="staff.html">Staff</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="ultimos-articulos.html">Ultimos articulos</a>
+
+    </nav>
+
+</header>
+
+<body>
+    <section class="staff">
+
+        <h2 class="titulo">Staff</h2>
+    
+        <div class="staff-container">
+    
+            <!-- Luna -->
+            <div class="staff-card">
+    
+                <div class="decoracion decoracion1"></div>
+    
+                <img src="https://plus.unsplash.com/premium_photo-1738449261730-2bc6a8ab40b5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29uYWplcyUyMGRlJTIwY2hpY2FzfGVufDB8fDB8fHww" alt="Luna">
+    
+                <h3>🌸Luz</h3>
+    
+                <span>UI / UX Designer</span>
+    
+                <p>
+                    Diseña interfaces modernas, coloridas y fáciles de usar para todos.
+                </p>
+    
+                <div class="social">
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-github"></i>
+                </div>
+    
+            </div>
+    
+            <!-- Leo -->
+    
+            <div class="staff-card">
+    
+                <div class="decoracion decoracion2"></div>
+    
+                <img src="https://images.unsplash.com/photo-1772371272141-0fbd644b65c4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVyc29uYWplcyUyMGRlJTIwY2hpY29zfGVufDB8fDB8fHww" alt="Leo">
+    
+                <h3>🤖Vladimir</h3>
+    
+                <span>Backend Developer</span>
+    
+                <p>
+                    Desarrolla APIs, bases de datos y toda la lógica del sistema.
+                </p>
+    
+                <div class="social">
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-github"></i>
+                </div>
+    
+            </div>
+    
+            <!-- Mia -->
+    
+            <div class="staff-card">
+    
+                <div class="decoracion decoracion3"></div>
+    
+                <img src="https://plus.unsplash.com/premium_photo-1738449258732-ddf16816036a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHBlcnNvbmFqZXMlMjBkZSUyMGNoaWNhc3xlbnwwfHwwfHx8MA%3D%3D" alt="Mía">
+    
+                <h3>💜 Mariel</h3>
+    
+                <span>Frontend Developer</span>
+    
+                <p>
+                    Convierte cada idea en una experiencia visual atractiva.
+                </p>
+    
+                <div class="social">
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-github"></i>
+                </div>
+    
+            </div>
+    
+            <!-- Nico -->
+    
+            <div class="staff-card">
+    
+                <div class="decoracion decoracion4"></div>
+    
+                <img src="https://images.unsplash.com/photo-1740252117013-4fb21771e7ca?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29uYWplcyUyMGRlJTIwY2hpY29zfGVufDB8fDB8fHww" alt="Nico">
+    
+                <h3>🚀Juan jose</h3>
+    
+                <span>Full Stack</span>
+    
+                <p>
+                    Une el frontend y el backend para crear aplicaciones completas.
+                </p>
+    
+                <div class="social">
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-github"></i>
+                </div>
+    
+            </div>
+    
+            <!-- Kai -->
+    
+            <div class="staff-card">
+    
+                <div class="decoracion decoracion5"></div>
+    
+                <img src="https://images.unsplash.com/photo-1740252117012-bb53ad05e370?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29uYWplcyUyMGRlJTIwY2hpY29zfGVufDB8fDB8fHww" alt="Kai">
+    
+                <h3>⚡Juan Andrés</h3>
+    
+                <span>DevOps Engineer</span>
+    
+                <p>
+                    Automatiza procesos y despliega aplicaciones en la nube.
+                </p>
+    
+                <div class="social">
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-github"></i>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+    <footer class="footer">
+
+        <div class="footer-container">
+    
+            <!-- Logo -->
+            <div class="footer-column">
+    
+                <img src="img/sin fondo.png" alt="Ademass" class="footer-logo">
+    
+                <p>Ademass Training Development</p>
+                <p>Polo Digital</p>
+                <p>29003 Málaga, ESPAÑA</p>
+    
+                <a href="mailto:info@ademass.com" class="email">
+                    info@ademass.com
+                </a>
+    
+            </div>
+    
+            <!-- Legal -->
+            <div class="footer-column">
+    
+                <h3>Legal</h3>
+    
+                <ul>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                </ul>
+    
+            </div>
+    
+            <!-- Enlaces -->
+            <div class="footer-column">
+    
+                <h3>Enlaces</h3>
+    
+                <ul>
+                    <li><a href="#">Campus</a></li>
+                    <li><a href="#">Empresas</a></li>
+                    <li><a href="#">Comunidad</a></li>
+                    <li><a href="#">Staff</a></li>
+                </ul>
+    
+            </div>
+    
+            <!-- Redes -->
+            <div class="footer-column">
+    
+                <h3>Redes Sociales</h3>
+    
+                <div class="social-icons">
+    
+                    <a class="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a class="twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a class="instagram"><i class="fab fa-instagram"></i></a>
+                    <a class="telegram"><i class="fab fa-telegram-plane"></i></a>
+                    <a class="tiktok"><i class="fab fa-tiktok"></i></a>
+    
+                    <a class="youtube"><i class="fab fa-youtube"></i></a>
+                    <a class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="rss"><i class="fas fa-rss"></i></a>
+                    <a class="google"><i class="fab fa-google"></i></a>
+    
+                </div>
+    
+                <a href="#" class="discord-btn">
+                    <i class="fab fa-discord"></i>
+                    Discord
+                </a>
+    
+            </div>
+    
+        </div>
+    
+        <div class="footer-bottom">
+            Ademass © Todos los derechos reservados. Versión: 0.8.0
+        </div>
+    
+    </footer>
+</body>
+
+</html>
