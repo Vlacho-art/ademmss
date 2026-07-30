@@ -85,7 +85,7 @@ BOTONES
 
     padding:12px 28px;
     border-radius:14px;
-    color:#fff !important;
+    /* color:#fff !important; */
     font-weight:600;
     transition:.3s;
 
@@ -117,16 +117,6 @@ BOTONES
 
 
 /* Pilares */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-body{
-    background:#f6f6f6;
-}
 
 .pilares{
     width:100%;
