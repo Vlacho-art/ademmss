@@ -70,7 +70,12 @@ MENU
 
 }
 
+.menu .active{
 
+    color:#29A9D1;
+    font-weight:600;
+
+}
 
 /*========================
 BOTONES
@@ -80,7 +85,7 @@ BOTONES
 
     padding:12px 28px;
     border-radius:14px;
-    color:#fff !important;
+    /* color:#fff !important; */
     font-weight:600;
     transition:.3s;
 
@@ -111,7 +116,108 @@ BOTONES
 }
 
 
+/* Pilares */
 
+.pilares{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:70px 20px;
+    text-align:center;
+}
+
+.subtitulo{
+    color:#bcbcbc;
+    font-size:11px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+
+.pilares h2{
+    color:#c6cf00;
+    font-size:36px;
+    margin-bottom:60px;
+    font-weight:700;
+}
+
+.contenedor{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    padding:40px 30px;
+    border-radius:4px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.card i{
+    font-size:75px;
+    color:#27a9c9;
+    margin-bottom:25px;
+}
+
+.card h3{
+    font-size:20px;
+    margin-bottom:18px;
+    color:#333;
+}
+
+.card p{
+    color:#666;
+    font-size:15px;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:45px;
+    padding:14px 35px;
+    border:2px solid #c6cf00;
+    border-radius:30px;
+    text-decoration:none;
+    color:#c6cf00;
+    font-weight:bold;
+    transition:.3s;
+    letter-spacing:1px;
+}
+
+.btn:hover{
+    background:#c6cf00;
+    color:white;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+    .contenedor{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:700px){
+
+    .contenedor{
+        grid-template-columns:1fr;
+    }
+
+    .pilares h2{
+        font-size:30px;
+    }
+
+}
 
 
 
