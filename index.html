@@ -6,10 +6,10 @@
     <title>Menú Ademass</title>
 
     <!-- Google Font -->
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -35,11 +35,401 @@
 
 
 
+<!-- HERO -->
+<section class="hero">
+    <img src="img/imagen1.png" width="100%" height="115%" alt="Banner Ademass">
+</section>
 
 
 
 
 
+<section class="awards">
+    <div class="container">
+        <div class="awards-image">
+            <img src="img/imagen3.png"  width="100%" height="115%" alt="">
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- SECCIÓN COMUNIDAD - AUTOCONTENIDA (CSS incluido) -->
+<!-- Pega esto donde quieras mostrar la sección     -->
+<!-- ============================================= -->
+
+<style>
+.community {
+    font-family: 'Poppins', sans-serif;
+    padding: 80px 60px;
+    background: linear-gradient(135deg, #f5f4ff 0%, #eefaf5 100%);
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+.community *{
+    box-sizing: border-box;
+}
+.community-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.community-content {
+    flex: 1 1 480px;
+    min-width: 320px;
+}
+.community-image {
+    flex: 1 1 400px;
+    min-width: 280px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.4);
+    border-radius: 20px;
+}
+.community-image img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.community-badge {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #c9c3ff;
+    border-radius: 50px;
+    color: #6a5cf5;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    background: #fff;
+}
+.community-title {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1b1636;
+    margin-bottom: 20px;
+}
+.community-title .highlight {
+    background: linear-gradient(90deg, #3ab0ff, #6dd66d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.community-text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #4a4a5a;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+.community-text strong {
+    color: #6a5cf5;
+}
+.community-quote {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 16px;
+    padding: 25px 30px;
+    margin-bottom: 35px;
+    max-width: 600px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    position: relative;
+}
+.quote-icon {
+    font-size: 40px;
+    color: #6a5cf5;
+    font-weight: 700;
+    line-height: 1;
+    display: block;
+    margin-bottom: 5px;
+}
+.quote-body {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+.quote-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    background: #ddd;
+}
+.quote-text {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+}
+.quote-author {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1b1636;
+}
+.quote-author a {
+    color: #6a5cf5;
+    text-decoration: none;
+    font-weight: 600;
+}
+.community-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.community-buttons .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 24px;
+    border-radius: 50px;
+    text-decoration: none !important;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: transform .2s ease, box-shadow .2s ease;
+    white-space: nowrap;
+}
+.community-buttons .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.community-buttons .btn-campus {
+    background: linear-gradient(90deg, #4a6cf7, #6a5cf5);
+    color: #fff !important;
+}
+.community-buttons .btn-register {
+    background: linear-gradient(90deg, #b6e34d, #7fd858);
+    color: #1b1636 !important;
+}
+.community-buttons .btn-arrow {
+    background: rgba(255,255,255,0.9);
+    color: #333;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+.community-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.community-features .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 160px;
+}
+.community-features .feature-item h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1b1636;
+    margin: 0 0 3px;
+}
+.community-features .feature-item p {
+    font-size: 12.5px;
+    color: #777;
+    margin: 0;
+    line-height: 1.3;
+}
+.community-features .feature-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+.community-features .icon-purple { background: linear-gradient(135deg, #8a5cf7, #6a3cf0); }
+.community-features .icon-blue   { background: linear-gradient(135deg, #4a8bf7, #2a6ce0); }
+.community-features .icon-teal   { background: linear-gradient(135deg, #2dd4bf, #14b8a6); }
+.community-features .icon-orange { background: linear-gradient(135deg, #ffb84d, #ff8c2d); }
+.community-features .icon-pink   { background: linear-gradient(135deg, #ff6fb8, #ff4d94); }
+
+/* Mantiene la imagen AL LADO del texto hasta pantallas de tablet pequeñas */
+@media (max-width: 900px) {
+    .community {
+        padding: 60px 30px;
+    }
+    .community-container {
+        gap: 30px;
+    }
+    .community-content {
+        flex: 1 1 300px;
+    }
+    .community-image {
+        flex: 1 1 260px;
+        min-width: 220px;
+        min-height: 200px;
+    }
+    .community-title {
+        font-size: 30px;
+    }
+    .community-features {
+        gap: 18px;
+    }
+}
+
+/* Solo apila en móviles reales */
+@media (max-width: 600px) {
+    .community-container {
+        flex-direction: column;
+    }
+    .community-image {
+        order: -1;
+        width: 100%;
+    }
+}
+</style>
+
+<!-- SOMOS COMUNIDAD -->
+<section class="community">
+    <div class="community-container">
+
+        <!-- Columna de texto -->
+        <div class="community-content">
+
+            <span class="community-badge">
+                🚀 FORMACIÓN, PRÁCTICAS, EMPLEO Y CERTIFICACIONES DEVS.
+            </span>
+
+            <h2 class="community-title">
+                Somos Comunidad.<br>
+                Somos Developers.<br>
+                <span class="highlight">Esta es tu casa.</span>
+            </h2>
+
+            <p class="community-text">
+                Además es una comunidad de desarrolladores abierta que busca
+                <strong>aunar en un único lugar</strong> todo lo que un desarrollador necesita:
+                Formación de calidad para todos los niveles y especializaciones,
+                oportunidades de empleo para mejorar en tu carrera, certificaciones
+                de peso que acrediten tus conocimientos, resolución de dudas,
+                posibilidad de participar en prácticas con proyectos reales y
+                mucho más... 🚀
+            </p>
+
+            <div class="community-quote">
+                <span class="quote-icon">"</span>
+                <div class="quote-body">
+                    <img src="img/personita.png" alt="Juanjo Ruiz" class="quote-avatar">
+                    <div class="quote-text-wrap">
+                        <p class="quote-text">
+                            «No necesitas haber ido a la universidad, o tener
+                            conocimientos previos. Si eres o quieres ser programador,
+                            Ademass es tu casa. Aquí encontrarás todo lo que necesitas.
+                            Elige la opción que mejor se adapte a ti. Somos una
+                            comunidad. Únete, juntos somos mejores.»
+                        </p>
+                        <span class="quote-author">
+                            Juanjo Ruiz, <a href="#">CTO Ademass</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="community-buttons">
+                <a href="#" class="btn btn-campus">
+                    <i class="fas fa-graduation-cap"></i>
+                    Accede al campus
+                    <span class="btn-arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#" class="btn btn-register">
+                    <i class="fas fa-users"></i>
+                    Regístrate ahora
+                    <span class="btn-arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+
+          <div class="community-features">
+
+    <div class="feature-item">
+        <div class="feature-icon icon-purple">
+            <i class="fas fa-graduation-cap"></i>
+        </div>
+
+        <div class="feature-text">
+            <h4>Formación</h4>
+            <p>Cursos para todos los niveles</p>
+        </div>
+    </div>
+
+    <div class="feature-item">
+        <div class="feature-icon icon-blue">
+            <i class="fas fa-briefcase"></i>
+        </div>
+
+        <div class="feature-text">
+            <h4>Empleo</h4>
+            <p>Mejora tu carrera profesional</p>
+        </div>
+    </div>
+
+    <div class="feature-item">
+        <div class="feature-icon icon-teal">
+            <i class="fas fa-award"></i>
+        </div>
+
+        <div class="feature-text">
+            <h4>Certificaciones</h4>
+            <p>Acredita tus conocimientos</p>
+        </div>
+    </div>
+
+    <div class="feature-item">
+        <div class="feature-icon icon-orange">
+            <i class="fas fa-user-friends"></i>
+        </div>
+
+        <div class="feature-text">
+            <h4>Comunidad</h4>
+            <p>Resuelve dudas y conecta</p>
+        </div>
+    </div>
+
+    <div class="feature-item">
+        <div class="feature-icon icon-pink">
+            <i class="fas fa-code"></i>
+        </div>
+
+        <div class="feature-text">
+            <h4>Prácticas</h4>
+            <p>Proyectos reales y mucho más</p>
+        </div>
+    </div>
+
+</div>
+        </div>
+
+        <!-- Columna de imagen -->
+        <div class="community-image">
+            <img src="img/imagen6.png" alt="Mascota Ademass">
+        </div>
+
+    </div>
+</section>
 
 
 
@@ -54,7 +444,7 @@
         <!-- Logo -->
         <div class="footer-column">
 
-            <img src="img/logo.png" alt="Ademass" class="footer-logo">
+            <img src="img/sin fondo.png" alt="Ademass" class="footer-logo">
 
             <p>Ademass Training Development</p>
             <p>Polo Digital</p>
