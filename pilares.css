@@ -85,7 +85,7 @@ BOTONES
 
     padding:12px 28px;
     border-radius:14px;
-    color:#fff !important;
+    /* color:#fff !important; */
     font-weight:600;
     transition:.3s;
 
